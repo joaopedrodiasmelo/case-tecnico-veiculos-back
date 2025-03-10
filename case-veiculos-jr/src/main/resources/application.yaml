@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-jp-case
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  port: 8090
+  servlet:
+    context-path: /${spring.application.name}
+  error:
+    include-stacktrace: on_param
+  tomcat:
+    threads:
+      max: 20
